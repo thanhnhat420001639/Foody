@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="#EAE9E9"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:textColor="#EA0000"
+        android:id="@+id/textViewTenMonAn_Gio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên món ăn" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:id="@+id/textViewSoLuong_Gio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:textColor="#2196F3"
+        android:id="@+id/textViewGia_Gio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gia" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_BackHome"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/left_arrow"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:id="@+id/image_Search"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/txtView_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm món ăn, t...  "
+            android:textColorHint="@color/gray_200"
+            android:textSize="18sp"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txtView_SearchType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" tại "
+            android:background="@color/white"
+            android:textSize="18sp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/txtView_SearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:text="@string/location1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@android:color/holo_red_light"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_Search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

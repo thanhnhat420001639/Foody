@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_SearchLocation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_BackHome"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/left_arrow_2"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtView_SearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:text="Chọn Tỉnh/Thành phố"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/image_BackHome"
+            android:layout_width="27sp"
+            android:layout_height="27sp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/txtView_SearchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="Tìm Tỉnh/Thành phố"
+            android:textColorHint="@color/gray_200"
+            android:textSize="20sp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tự động xác định vị trí"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:src="@drawable/navigate"
+            android:layout_marginLeft="170dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_SearchCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vietnam"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn quốc gia"
+            android:textColor="@color/black"
+            android:layout_marginLeft="190dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:src="@drawable/right_arrow"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

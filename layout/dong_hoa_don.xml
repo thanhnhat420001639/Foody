@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:background="#EAE9E9"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textViewMaHoaDon"
+        android:textColor="#EA0000"
+        android:textSize="22sp"
+        android:layout_margin="5dp"
+        android:text="Mã hóa đơn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textViewTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Tổng tiền"
+        android:textColor="#2196F3"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

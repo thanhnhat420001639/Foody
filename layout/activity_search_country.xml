@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchCountryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_BackHome"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/left_arrow_2"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtView_SearchLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:text="Chọn Quốc Gia"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/image_BackHome"
+            android:layout_width="27sp"
+            android:layout_height="27sp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/txtView_SearchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="Tìm Quốc Gia"
+            android:textColorHint="@color/gray_200"
+            android:textSize="20sp"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
